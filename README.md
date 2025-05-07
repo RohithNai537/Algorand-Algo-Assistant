@@ -58,6 +58,7 @@ Traditional blockchain interactions can often be:
 
 ## 📸 Screenshots
 Here’s a preview of the **Algorand Assistant Dashboard** in action:
+![Algo Assistant Dashboard](src/data/algo%20assistant%20dashboard.png)
 
 The dashboard provides users with a summary of their blockchain activity, including:
 
