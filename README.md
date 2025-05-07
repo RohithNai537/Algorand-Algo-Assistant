@@ -1,73 +1,123 @@
-# Welcome to your Lovable project
+Algorand Assistant — Blockchain Interaction and Task Automation on Algorand
+Algorand Assistant is a decentralized application (dApp) built on the Algorand blockchain, designed to assist users in managing blockchain-related tasks, including wallet interactions, smart contract deployments, and task automation. It simplifies the blockchain experience, helping users with wallet management, transaction automation, and interaction with decentralized applications (dApps).
 
-## Project info
+🧠 ***Problem Statement***
+Traditional blockchain interactions can often be:
 
-**URL**: https://lovable.dev/projects/282b75cd-1b66-4994-b3b2-71d0ac3a2e94
+Complex and difficult for newcomers to understand.
 
-## How can I edit this code?
+Prone to errors and manual oversight.
 
-There are several ways of editing your application.
+Require multiple intermediary services or platforms for task automation.
 
-**Use Lovable**
+Algorand Assistant solves these problems by offering a streamlined, user-friendly interface for blockchain interactions, automating transactions and simplifying task execution on the Algorand blockchain.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/282b75cd-1b66-4994-b3b2-71d0ac3a2e94) and start prompting.
+🎯 ***Objectives***
+✅ Enable users to manage Algorand wallets and perform transactions with ease.
+✅ Automate routine blockchain tasks like smart contract deployment and token transfers.
+✅ Provide a seamless experience for interacting with Algorand-based dApps.
+✅ Facilitate trustless and transparent interactions through blockchain technology.
 
-Changes made via Lovable will be committed automatically to this repo.
+🌟 Key Features
+🔐 Wallet Integration
 
-**Use your preferred IDE**
+Secure login with Pera Wallet.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Users can interact with their Algorand wallet, perform transactions, and track balances.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+📝 Task Automation & Smart Contracts
 
-Follow these steps:
+Automate blockchain tasks such as token transfers, smart contract interactions, and voting.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Simple task creation interface with reward options in ALGO or ASA tokens.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+🤖 Transaction Management
 
-# Step 3: Install the necessary dependencies.
-npm i
+Automate sending, receiving, and managing transactions using pre-configured smart contracts.
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Transactions are executed in a trustless, transparent manner on the Algorand blockchain.
 
-**Edit a file directly in GitHub**
+🔒 Smart Contract Interaction
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Easy deployment of Algorand smart contracts using PyTeal and AlgoKit.
 
-**Use GitHub Codespaces**
+Support for interacting with contracts in a secure and decentralized manner.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🌐 DeFi Integration
 
-## What technologies are used for this project?
+Integration with DeFi protocols for yield farming and staking rewards.
 
-This project is built with:
+Optional module for connecting to liquidity pools and earning additional APY.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+⚙️ Tech Stack
 
-## How can I deploy this project?
+🌐 ***Frontend***
+React JS for dynamic UI
 
-Simply open [Lovable](https://lovable.dev/projects/282b75cd-1b66-4994-b3b2-71d0ac3a2e94) and click on Share -> Publish.
+Tailwind CSS for responsive design
 
-## Can I connect a custom domain to my Lovable project?
+Pera Wallet SDK for wallet integration
 
-Yes, you can!
+IPFS for decentralized file storage
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+🧠 ***Smart Contracts***
+Algorand Smart Contracts (ASC1) in PyTeal
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+AlgoKit for project scaffolding, building, and deploying
+
+Algorand SDK to interact with the blockchain
+
+🧪 ***Testing & Development Tools***
+Jest for testing
+
+Algokit sandbox for local blockchain interaction
+
+
+
+📸 ***Screenshots***
+Here’s a preview of the Algorand Assistant Dashboard in action:
+
+
+The dashboard provides users with a summary of their blockchain activity, including:
+
+Wallet information and total balance.
+
+Task statuses (Completed, Pending).
+
+Available tasks with details like deadlines and rewards.
+
+Section for interacting with DeFi earning opportunities.
+
+
+
+🧾 ***Prerequisites***
+Before running the project locally, ensure you have:
+
+Node.js ≥ v16
+
+AlgoKit installed
+
+Pera Wallet (mobile or extension)
+
+Git installed
+
+***Installation Steps***
+Clone the repository:
+`git clone https://github.com/your-username/Algorand-Assistant.git`
+
+`cd Algorand-Assistant`
+
+Install frontend dependencies: 
+`npm install`
+
+Build and deploy smart contracts using AlgoKit:
+`algokit project run build`
+
+Start the development server:
+`npm run dev`
+
+Visit http://localhost:3000 to view the running dApp.
+
+***License***
+This project is licensed under the MIT License.
+
