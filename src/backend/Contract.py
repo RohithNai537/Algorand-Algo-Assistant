@@ -37,4 +37,10 @@ def provide_answer(self, query_id: arc4.UInt64, answer: arc4.String):
     entry.resolved = arc4.Bool(True)
     self.boxes[query_id] = entry
 
+@arc4.abimethod
+def get_query_answer(self, query_id: arc4.UInt64) -> arc4.Tuple[arc4.String, arc4.String, arc4.Bool]:
+    entry = self.boxes[query_id]
+    return (entry.question, entry.answer, entry.resolved)
+
+
 
