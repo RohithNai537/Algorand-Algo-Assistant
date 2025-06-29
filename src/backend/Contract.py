@@ -49,6 +49,14 @@ def delete_query(self, query_id: arc4.UInt64, caller: arc4.Address):
     assert caller == entry.user, "Only question owner can delete"
     del self.boxes[query_id]
 
+@arc4.abimethod
+def mark_unresolved(self, query_id: arc4.UInt64, caller: arc4.Address):
+    entry = self.boxes[query_id].copy()
+    assert caller == entry.user, "Only user can reopen their query"
+    entry.resolved = arc4.Bool(False)
+    entry.answer = arc4.String("")
+    self.boxes[query_id] = entry
+
 
 
 
