@@ -43,4 +43,12 @@ def get_query_answer(self, query_id: arc4.UInt64) -> arc4.Tuple[arc4.String, arc
     return (entry.question, entry.answer, entry.resolved)
 
 
+@arc4.abimethod
+def delete_query(self, query_id: arc4.UInt64, caller: arc4.Address):
+    entry = self.boxes[query_id]
+    assert caller == entry.user, "Only question owner can delete"
+    del self.boxes[query_id]
+
+
+
 
