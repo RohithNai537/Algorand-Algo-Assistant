@@ -29,3 +29,12 @@ def submit_question(self, query_id: arc4.UInt64, question: arc4.String, user: ar
         resolved=arc4.Bool(False)
     )
 
+@arc4.abimethod
+def provide_answer(self, query_id: arc4.UInt64, answer: arc4.String):
+    entry = self.boxes[query_id].copy()
+    assert not entry.resolved, "Query already resolved"
+    entry.answer = answer
+    entry.resolved = arc4.Bool(True)
+    self.boxes[query_id] = entry
+
+
